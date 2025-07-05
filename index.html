@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LF Loadingscreen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <video id="bg-video" autoplay muted loop>
+    <source src="assets/loadingscreen.mp4" type="video/mp4">
+  </video>
+  <div id="music-player">
+    <div id="track-info">
+      <div id="track-title">Loadingscreen</div>
+      <div id="track-artist">LF Scripts</div>
+      <div id="track-duration">0:00 / 0:00</div>
+    </div>
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+    <div id="controls">
+      <div id="player-controls">
+        <button id="prev-btn" title="Previous"><i class="fas fa-step-backward"></i></button>
+        <button id="play-pause-btn" title="Play/Pause"><i class="fas fa-play"></i></button>
+        <button id="next-btn" title="Next"><i class="fas fa-step-forward"></i></button>
+      </div>
+      <div id="volume-control">
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.25">
+        <button id="volume-btn"><i class="fas fa-volume-up"></i></button>
+      </div>
+    </div>
+  </div>
+  <div id="external-links"></div>
+  <div id="watermark">Made by LF Scripts</div>
+  <script src="config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
